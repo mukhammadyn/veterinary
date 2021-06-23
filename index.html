@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Veterinary clinic</title>
-  <link rel="stylesheet" href="css/style-mini.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -28,13 +28,13 @@
     <div class="site-header__bottom">
       <div class="site-header__container container">
         <div class="div">
-          <a class="site-header__logo-link" href="#"><img class="site-header__logo" src="img/icon/logo.svg" alt="site-logo"></a>
+          <a class="site-header__logo-link" href="index.html"><img class="site-header__logo" src="img/icon/logo.svg" alt="site-logo"></a>
         </div>
         <nav class="site-header__nav">
           <ul class="site-header__list">
-          <li class="site-header__item"><a class="site-header__link site-link" href="#">Главная</a></li>
+          <li class="site-header__item"><a class="site-header__link site-link" href="index.html">Главная</a></li>
           <li class="site-header__item"><a class="site-header__link site-link" href="#">О Клинике</a></li>
-          <li class="site-header__item"><a class="site-header__link site-link" href="#">Наши Услуги</a></li>
+          <li class="site-header__item"><a class="site-header__link site-link" href="services.html">Наши Услуги</a></li>
           <li class="site-header__item"><a class="site-header__link site-link" href="#">Полезные Статьи</a></li>
           <li class="site-header__item"><a class="site-header__link site-link" href="#">FAQ</a></li>
           <li class="site-header__item"><a class="site-header__link site-link" href="#">Контакты</a></li>
@@ -289,31 +289,30 @@
       </div>
     </section>
 
-    <!-- <section class="feedback">
-      <div class="feedback__inner">
-        <div class="feedback__map">
+    <!-- FEEDBCK -->
+    <section class="index-feedback">
+      <div class="index-feedback__container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d867267.5924028732!2d34.33159144748002!3d31.885832302776016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151cf2d28866bdd9%3A0xee17a001d166f686!2z0J_QsNC70LXRgdGC0LjQvdCw!5e0!3m2!1sru!2s!4v1624372943506!5m2!1sru!2s" width="462" height="663" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-        </div>
-        <div class="feedback__fish">
-          <div class="feedback__container container">
-            <h2 class="feedback__header">Обратная связь</h2>
-            <p class="feedback__desc">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
-            <form class="site-form" action="https://echo.htmlacademy.ru" method="POST">  
-              <label for="name" class="visually-hidden">Имя</label>      
-              <input type="text" name="name" class="feedback__input" id="name" placeholder="Ваше имя">
-
-              <label for="email" class="visually-hidden">Email</label>      
-              <input type="email" name="email" class="feedback__input" id="email" placeholder="Email для обратной связи">
-
-              <label for="question" class="visually-hidden">Опишите Ваш вопрос.</label>
-              <textarea name="question" id="question" cols="30" rows="10"></textarea>
-
-              <button type="submit" class="feedback__button">Задать нам вопрос</button>
+        <div class="index-feedback__form">
+          <div class="index-feedback__forma feedback-form">
+            <h2 class="feedback-form__heading">Обратная связь</h2>
+            <p class="feedback-form__desc">
+              При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:
+            </p>
+            <form class="feedback-form__form" action="https://echo.htmlacademy.ru" method="POST">        
+              <label class="visually-hidden" for="name">Name</label>
+              <input class="feedback-form__input" id="name" type="text" name="name" required placeholder="Ваше имя">
+              <label class="visually-hidden" for="email">Email</label>
+              <input type="email" class="feedback-form__input" name="email" id="email" required placeholder="Email для обратной связи" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$">
+              <label class="visually-hidden" for="message">Message</label>
+              <textarea class="feedback-form__message" name="message" id="message" cols="30" rows="10" required placeholder="Опишите Ваш вопрос."></textarea>
+              <button type="submit" class="button feedback-form__btn button-light">Задать нам вопрос</button>
             </form>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
   </main>
     
   <footer class="site-footer">

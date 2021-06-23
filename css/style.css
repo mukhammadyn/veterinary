@@ -90,7 +90,7 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1345px;
+  max-width: 1355px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -939,6 +939,90 @@ img {
   height: 100%;
 }
 
+
+
+/* FEEDBACK */
+.index-feedback {
+  padding-bottom: 247px;
+}
+
+.index-feedback__container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+}
+
+.index-feedback__form {
+  padding-top: 62px;
+  padding-bottom: 74px;
+  padding-right: 448px;
+  padding-left: 165px;
+  background-color: #333333;
+  background-image: url(../img/form-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.index-feedback__forma {
+  width: 375px;
+}
+
+.feedback-form__heading {
+  margin: 0;
+  margin-bottom: 14px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 62px;
+  color: #fff;
+}
+
+.feedback-form__desc {
+  margin: 0;
+  margin-bottom: 29px;
+  width: 334px;
+}
+
+.feedback-form__input {
+  margin-bottom: 14px;
+  padding: 16px 22px 13px 22px;
+  width: 375px;
+  border: 1px solid transparent;
+}
+
+.feedback-form__input::placeholder {
+  font-size: 16px;
+  line-height: 21px;
+  color: #949494;
+  font-weight: 400;
+}
+
+.feedback-form__message {
+  margin-bottom: 30px;
+  padding: 16px 22px 13px 22px;
+  width: 375px;
+  border: 1px solid transparent;
+  resize: none;
+}
+
+.feedback-form__message::placeholder {
+  font-size: 16px;
+  line-height: 21px;
+  color: #949494;
+  font-weight: 400;
+}
+
+.feedback-form__btn {
+  padding: 15px 50px;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+
+
+
+/* FOOTER */
 .site-footer {
   padding-top: 56px;
   padding-bottom: 23px;
@@ -1069,4 +1153,209 @@ img {
   font-size: 14px;
   line-height: 18px;
   color: #5C5C5C;
+}
+
+
+
+/* SERVICES HERO */
+.services-hero {
+  padding-top: 111px;
+  padding-bottom: 140px;
+  background-image: url(../img/toti.png);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 490px) calc(50% - 0px);
+  background-size: contain;
+}
+
+.services-hero__title {
+  margin-left: 117px;
+  width: 447px;
+}
+
+.services-hero__heading {
+  margin: 0;
+  margin-bottom: 21px;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 64px;
+  color: #333333;
+}
+
+.services-hero__desc {
+  margin: 0;
+}
+
+
+
+
+/* SERVICES */
+.service-our-services {
+  padding-bottom: 167px;
+}
+
+.card-button {
+  padding: 15px 30px;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 21px;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: trasnparent;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #222;
+}
+
+.button-second {
+  background-color: var(--hover-button-color);
+}
+
+.service-our-services__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-left: -30px;
+  margin-bottom: -34px;
+  padding: 0;
+  list-style: none;
+}
+
+.service-our-services__item {
+  margin-left: 30px;
+  margin-bottom: 34px;
+  padding: 57px 25px 45px 46px;
+  border: 1px solid transparent;
+  width: 305px;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  transition: box-shadow 0.3s ease-in-out;
+  background-repeat: no-repeat;
+}
+
+.service-our-services__item:nth-child(1) {
+  background-image: url(../img/doctor1.png);
+}
+
+.service-our-services__item:nth-child(odd) {
+  background-image: url(../img/pet1.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.service-our-services__item:nth-child(even) {
+  background-image: url(../img/pet2.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.service-our-services__item:hover {
+  box-shadow: 1px 10px 35px -14px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 10px 35px -14px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 10px 35px -14px rgba(0,0,0,0.75);
+}
+
+.our-service-item__img {
+  margin-bottom: 21px;
+  width: 87px;
+  height: 78px;
+}
+
+.our-service-item__heading {
+  margin: 0;
+  margin-bottom: 14px;
+  max-width: 230px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 34px;
+  color: #333333;
+}
+
+.our-service-item__text {
+  margin: 0;
+  margin-bottom: 26px;
+  max-width: 230px;
+}
+
+.service-our-services__item:nth-child(even) button {
+  background-color: #78c0de;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.service-our-services__item:nth-child(even) button:hover {
+  background-color: #222;
+}
+
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) { 
+    .hero {
+      background-image: url(../img/img@2x.png), url(../img/pet@2x.png);
+    }
+
+    .features__content::before {
+      background-image: url(../img/icon/bl-1@2x.png);
+    }
+
+    .features__content::after {
+      background-image: url(../img/icon/bl-2@2x.png);
+    }
+
+    .our-services__item:nth-child(1) {
+      background-image: url(../img/firs-see@2x.png);
+    }
+    
+    .our-services__item:nth-child(2) {
+      background-image: url(../img/second-see@2x.png);
+    }
+    
+    .our-services__item:nth-child(3) {
+      background-image: url(../img/hirurgi@2x.png);
+    }
+    
+    .our-services__item:nth-child(4) {
+      background-image: url(../img/dermotology@2x.png);
+    }
+    
+    .our-services__item:nth-child(5) {
+      background-image: url(../img/loborotory@2x.png);
+    }
+    
+    .our-services__item:nth-child(6) {
+      background-image: url(../img/avtalmalogy@2x.png);
+    }
+    
+    .our-services__item:nth-child(7) {
+      background-image: url(../img/usi@2x.png);
+    }
+    
+    .our-services__item:nth-child(8) {
+      background-image: url(../img/chip@2x.png);
+    }
+    
+    .our-services__item:nth-child(9) {
+      background-image: url(../img/passport@2x.png);
+    }
+    
+    .our-services__item:nth-child(10) {
+      background-image: url(../img/vacsine@2x.png);
+    }
+    
+    .our-services__item:nth-child(11) {
+      background-image: url(../img/stomatology@2x.png);
+    }
+    
+    .our-services__item:nth-child(12) {
+      background-image: url(../img/call-home@2x.png);
+    }
+    .services-hero {
+      background-image: url(../img/toti@2x.png);
+    }
 }
