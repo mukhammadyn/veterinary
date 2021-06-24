@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,13 +41,13 @@
         </ul>
         </nav>
         <div class="header-btn">
-          <a href="#" class="site-header__ask site-link">Задать вопрос</a>
+          <a href="question.html" class="site-header__ask site-link js-open-modal">Задать вопрос</a>
         </div>
       </div>
     </div>  
   </header>
 
-  <main>
+  <main class="services-main">
     <section class="services-hero">
       <div class="services-hero__container container">
         <div class="services-hero__title">
@@ -177,5 +177,34 @@
     
     
   </footer>
+
+  <section class="modal-window">
+    <div class="modal-window__wrapper">
+      <button class="modal-window__close-btn js-close-modal"></button>
+      <div class="modal-window__container">
+        <!-- authorisation => authorisation -->
+        <div class="modal-window__authorisation">
+          <p class="modal-window__authorisation-desc">
+            Авторизация:
+          </p>
+          <a class="modal-window__link google-link" href="https://www.google.com" target="_blank">Войти через Google</a>
+          <a class="modal-window__link facebook-link" href="https://www.facebook.com" target="_blank">Войти через Facebook</a>
+        </div>
+        <div class="modal-window__questions">
+          <h2 class="modal-window__heading">Задать вопрос</h2>
+          <form class="modal-window__form" action="https://echo.htmlacademy.ru" method="POST">        
+            <label class="visually-hidden" for="name">Ваше имя</label>
+            <input class="modal-window__input name-input" id="name" type="text" name="name" required placeholder="Ваше имя">
+  
+            <label class="visually-hidden" for="question">Опишите Ваш вопрос.</label>
+            <textarea class="modal-window__input message-input" name="question" id="question" cols="30" rows="10" required placeholder="Опишите Ваш вопрос."></textarea>
+            <button class="modal-window__submit-btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script/main.js"></script>
 </body>
 </html>

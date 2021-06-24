@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,16 +32,16 @@
         </div>
         <nav class="site-header__nav">
           <ul class="site-header__list">
-          <li class="site-header__item"><a class="site-header__link site-link" href="index.html">Главная</a></li>
+          <li class="site-header__item site-header__item--active"><a class="site-header__link site-link" href="index.html">Главная</a></li>
           <li class="site-header__item"><a class="site-header__link site-link" href="#">О Клинике</a></li>
           <li class="site-header__item"><a class="site-header__link site-link" href="services.html">Наши Услуги</a></li>
           <li class="site-header__item"><a class="site-header__link site-link" href="#">Полезные Статьи</a></li>
-          <li class="site-header__item"><a class="site-header__link site-link" href="#">FAQ</a></li>
+          <li class="site-header__item"><a class="site-header__link site-link" href="FAQ.html">FAQ</a></li>
           <li class="site-header__item"><a class="site-header__link site-link" href="#">Контакты</a></li>
         </ul>
         </nav>
         <div class="header-btn">
-          <a href="#" class="site-header__ask site-link">Задать вопрос</a>
+          <a href="question.html" class="site-header__ask site-link js-open-modal">Задать вопрос</a>
         </div>
       </div>
     </div>  
@@ -166,125 +166,114 @@
     </section>
 
     <section class="cute-dog">
-      <div class="cute-dog__container container">
-        <div class="cute-dog__content">
-          <h2 class="visually-hidden">Счастливый питомец</h2>
-          <p class="cute-dog__heading">Будь в курсе событий</p>
-          <form class="cute-dog__form site-form" action="https://echo.htmlacademy.ru" method="POST">        
-          <input class="cute-dog__input" name="email_address" type="email" aria-label="Email address" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" placeholder="Укажите Ваш email адрес">
-          <button type="submit" class="button cute-dog__btn">Подписаться</button>
-      </form>
+        <div class="cute-dog__container container">
+          <div class="cute-dog__inner">
+            <h2 class="visually-hidden">Счастливый питомец</h2>
+            <p class="cute-dog__heading">Будь в курсе событий</p>
+            <form class="cute-dog__form site-form" action="https://echo.htmlacademy.ru" method="POST">        
+              <input class="cute-dog__input" name="email_address" type="email" aria-label="Email address" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" placeholder="Укажите Ваш email адрес">
+              <button type="submit" class="button cute-dog__btn">Подписаться</button>
+            </form>
+          </div>
+            
         </div>
-      </div>
+      
     </section>
 
     <section class="useful-articles">
       <div class="useful-articles__container container">
         <h2 class="useful-articles__heading">Полезные статьи</h2>
         <ul class="useful-articles__list">
-          <li class="useful-articles__item use-article">
-            <div class="use-article__inner">
-              
-              <div class="use-article__content">
-                <img src="/img/cat1.png" alt=" " srcset="/img/cat1.png 1x, /img/cat1@2x.png 2x" class="use-article__image" width="305" height="180">
-                <data value class="use-article__data" data-time="2020-08-28" >28.08.2020</data>
-                <div class="use-article__title">
-                  <h3 class="use-article__heading">Ультразвуковая чистка зубов</h3>
-                </div>
-                <div class="use-article__text">
-                <p class="use-article__txt">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
-                </div>
-                <span class="use-article__span">
-                  <button class="use-article__btn" type="button">Читать больше</button>
-                </span>
+          <li class="useful-articles__item article-card article-card--active">
+            <img class="article-card__img article-card__img-big" src="/img/murka.png" alt=" " srcset="/img/murka.png 1x, /img/murka@2x.png 2x" width="305" height="180">
+            <img class="article-card__img article-card__img-mini" src="/img/murka-default.png" alt=" " srcset="/img/murka-default.png 1x, /img/murka-default@2x.png 2x" width="305" height="180">
+            <div class="article-card__content">
+              <div class="article-card__tags-date">
+                <ul class="article-card__tags">
+                  <li class="article-card__tag">
+                    <a href="#" class="article-card__tag-link">#собака</a></li>
+                  <li class="article-card__tag">
+                    <a href="#" class="article-card__tag-link">#дом</a>
+                  </li>
+                  <li class="article-card__tag">
+                    <a href="#" class="article-card__tag-link">#уход</a>
+                  </li>
+                </ul>
+                <time class="article-card__date" datetime="2020-08-28">28.08.2020</time>
               </div>
-              <div class="use-article__long-content long-content">
-                <div class="long-content__header">
-                  <div class="long-content__hash-tags">
-                    <a href="#" class="long-content__tag">#собака</a><a href="#" class="long-content__tag">#дом</a><a href="#" class="long-content__tag">#уход</a>
-                  </div>
-                  <data value class="use-article__data" data-time="2020-08-28" >28.08.2020</data>
-                </div>
-                <div class="long-content__main">
-                  <div class="use-article__title">
-                    <p class="use-article__heading">Ультразвуковая чистка зубов</p>
-                  </div>
-                <div class="use-article__desc">
-                  <p class="use-article__txt">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему теплый дом. И первым вопросом, который возникает у новых хозяев – как определить возраст котенка. Появление в доме котенка приятное и радосное событие.</p>
-                </div>
-                <button class="use-article__btn" type="button">Читать больше</button>
-                </div>
+              <div class="article-card__title">
+                <h3 class="article-card__heading">Ультразвуковая чистка зубов</h3>
               </div>
+              <div class="article-card__desc-wrapper">
+                <p class="article-card__desc">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+                <p class="article-card__long-desc">
+                  Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему теплый дом. И первым вопросом, который возникает у новых хозяев – как определить возраст котенка. Появление в доме котенка приятное и радосное событие.
+                </p>
+              </div>
+              <button class="article-card__btn special-btn">Читать больше</button>
             </div>
           </li>
 
-          <li class="useful-articles__item use-article">
-            <div class="use-article__inner">
-              
-              <div class="use-article__content">
-                <img src="/img/two-dogs.png" alt=" " srcset="/img/two-dogs.png 1x, /img/two-dogs.png@2x.png 2x" class="use-article__image" width="305" height="180">
-                <data value class="use-article__data" data-time="2020-08-29" >29.08.2020</data>
-                <div class="use-article__title">
-                  <h3 class="use-article__heading">Перед тем как завести собаку</h3>
-                </div>
-                <div class="use-article__text">
-                <p class="use-article__txt">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
-                </div>
-                <button class="use-article__btn" type="button">Читать больше</button>
+          <li class="useful-articles__item article-card">
+            <img class="article-card__img article-card__img-big" src="/img/two-dogs-big.png" alt=" " srcset="/img/two-dogs-big.png 1x, /img/two-dogs-big@2x.png 2x" width="305" height="180">
+            <img class="article-card__img article-card__img-mini" src="/img/two-dogs-mini.png" alt=" " srcset="/img/two-dogs-mini.png 1x, /img/two-dogs-mini@2x.png 2x" width="305" height="180">
+            <div class="article-card__content">
+              <div class="article-card__tags-date">
+                <ul class="article-card__tags">
+                  <li class="article-card__tag">
+                    <a href="#" class="article-card__tag-link">#собака</a></li>
+                  <li class="article-card__tag">
+                    <a href="#" class="article-card__tag-link">#дом</a>
+                  </li>
+                  <li class="article-card__tag">
+                    <a href="#" class="article-card__tag-link">#уход</a>
+                  </li>
+                </ul>
+                <time class="article-card__date" datetime="2020-08-29">29.08.2020</time>
               </div>
-              <div class="use-article__long-content long-content">
-                <div class="long-content__header">
-                  <div class="long-content__hash-tags">
-                    <a href="#" class="long-content__tag">#собака</a><a href="#" class="long-content__tag">#дом</a><a href="#" class="long-content__tag">#уход</a>
-                  </div>
-                  <data value class="use-article__data" data-time="2020-08-28" >28.08.2020</data>
-                </div>
-                <div class="long-content__main">
-                  <div class="use-article__title">
-                    <p class="use-article__heading">Перед тем как завести собаку</p>
-                  </div>
-                <div class="use-article__desc">
-                  <p class="use-article__txt">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему теплый дом. И первым вопросом, который возникает у новых хозяев – как определить возраст котенка. Появление в доме котенка приятное и радосное событие.</p>
-                </div>
-                <button class="use-article__btn" type="button">Читать больше</button>
-                </div>
+              <div class="article-card__title">
+                <h3 class="article-card__heading">Перед тем как завести собаку</h3>
               </div>
+              <div class="article-card__desc-wrapper">
+                <p class="article-card__desc">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+                <p class="article-card__long-desc">
+                  Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему теплый дом. И первым вопросом, который возникает у новых хозяев – как определить возраст котенка. Появление в доме котенка приятное и радосное событие.
+                </p>
+              </div>
+              <button class="article-card__btn special-btn">Читать больше</button>
             </div>
           </li>
 
-          <li class="useful-articles__item use-article">
-            <div class="use-article__inner">
-              
-              <div class="use-article__content">
-                <img src="/img/labrador.png" alt=" " srcset="/img/labrador.png 1x, /img/labrador.png@2x.png 2x" class="use-article__image" width="305" height="180">
-                <data value class="use-article__data" data-time="2020-08-28" >30.08.2020</data>
-                <div class="use-article__title">
-                  <h3 class="use-article__heading">Когда привавать питомца?</h3>
-                </div>
-                <div class="use-article__text">
-                <p class="use-article__txt">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
-                </div>
-                <button class="use-article__btn" type="button">Читать больше</button>
+          <li class="useful-articles__item article-card">
+            <img class="article-card__img article-card__img-big" src="/img/labrador-big.png" alt=" " srcset="/img/labrador-big.png 1x, /img/labrador-big@2x.png 2x" width="305" height="180">
+            <img class="article-card__img article-card__img-mini" src="/img/labrador-mini.png" alt=" " srcset="/img/labrador-mini.png 1x, /img/labrador-mini@2x.png 2x" width="305" height="180">
+            <div class="article-card__content">
+              <div class="article-card__tags-date">
+                <ul class="article-card__tags">
+                  <li class="article-card__tag">
+                    <a href="#" class="article-card__tag-link">#собака</a></li>
+                  <li class="article-card__tag">
+                    <a href="#" class="article-card__tag-link">#дом</a>
+                  </li>
+                  <li class="article-card__tag">
+                    <a href="#" class="article-card__tag-link">#уход</a>
+                  </li>
+                </ul>
+                <time class="article-card__date" datetime="2020-08-29">29.08.2020</time>
               </div>
-              <div class="use-article__long-content long-content">
-                <div class="long-content__header">
-                  <div class="long-content__hash-tags">
-                    <a href="#" class="long-content__tag">#собака</a><a href="#" class="long-content__tag">#дом</a><a href="#" class="long-content__tag">#уход</a>
-                  </div>
-                  <data value class="use-article__data" data-time="2020-08-28" >30.08.2020</data>
-                </div>
-                <div class="long-content__main">
-                  <div class="use-article__title">
-                    <p class="use-article__heading">Когда привавать питомца?</p>
-                  </div>
-                <div class="use-article__desc">
-                  <p class="use-article__txt">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему теплый дом. И первым вопросом, который возникает у новых хозяев – как определить возраст котенка. Появление в доме котенка приятное и радосное событие.</p>
-                </div>
-                <button class="use-article__btn" type="button">Читать больше</button>
-                </div>
+              <div class="article-card__title">
+                <h3 class="article-card__heading">Когда привавать питомца?</h3>
               </div>
+              <div class="article-card__desc-wrapper">
+                <p class="article-card__desc">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+                <p class="article-card__long-desc">
+                  Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от заводчиков, Бивают и ситуации когда животное находят на улице и дают ему теплый дом. И первым вопросом, который возникает у новых хозяев – как определить возраст котенка. Появление в доме котенка приятное и радосное событие.
+                </p>
+              </div>
+              <button class="article-card__btn special-btn">Читать больше</button>
             </div>
           </li>
+          
         </ul>
       </div>
     </section>
@@ -352,6 +341,33 @@
     
     
   </footer>
+
+  <section class="modal-window">
+    <div class="modal-window__wrapper">
+      <button class="modal-window__close-btn js-close-modal"></button>
+      <div class="modal-window__container">
+        <!-- authorisation => authorisation -->
+        <div class="modal-window__authorisation">
+          <p class="modal-window__authorisation-desc">
+            Авторизация:
+          </p>
+          <a class="modal-window__link google-link" href="https://www.google.com" target="_blank">Войти через Google</a>
+          <a class="modal-window__link facebook-link" href="https://www.facebook.com" target="_blank">Войти через Facebook</a>
+        </div>
+        <div class="modal-window__questions">
+          <h2 class="modal-window__heading">Задать вопрос</h2>
+          <form class="modal-window__form" action="https://echo.htmlacademy.ru" method="POST">        
+            <label class="visually-hidden" for="question_name">Ваше имя</label>
+            <input class="modal-window__input name-input" id="question_name" type="text" name="name" required placeholder="Ваше имя">
+  
+            <label class="visually-hidden" for="question">Опишите Ваш вопрос.</label>
+            <textarea class="modal-window__input message-input" name="question" id="question" cols="30" rows="10" required placeholder="Опишите Ваш вопрос."></textarea>
+            <button class="modal-window__submit-btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
   <script src="script/main.js"></script>
 </body>
 </html>
