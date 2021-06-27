@@ -67,3 +67,20 @@ if (elModalCloseButton) {
     closeModal();
   })
 }
+
+
+var elsFaqBtn = document.querySelectorAll('.js-faq-btn');
+
+var elsFaqCard = document.querySelectorAll('.faq-hero__card');
+
+
+elsFaqBtn.forEach(function (button) {
+  button.addEventListener('click', function () {
+    elsFaqCard.forEach(function (removeActive) {
+      removeActive.classList.remove('faq-hero__card--active');
+    });
+
+    button.closest('.faq-hero__card').classList.add('faq-hero__card--active');
+  });
+});
+

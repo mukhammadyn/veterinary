@@ -46,6 +46,7 @@
 html {
   box-sizing: border-box;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -1396,8 +1397,10 @@ main {
 
 /* FAQ */
 .faq-main {
-  background-image: url(../img/faq-hero-bg.png);
-  background-position: calc(50% + 490px) 36px;
+  background-image: url(../img/faq-hero-bg.png),
+  url(../img/faq-toti.png);
+  background-position: calc(50% + 490px) 36px,
+  calc(50% + 468px) calc(50% + 455px);
 }
 
 .faq-hero {
