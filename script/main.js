@@ -84,3 +84,11 @@ elsFaqBtn.forEach(function (button) {
   });
 });
 
+var elHeaderBottom = document.querySelector('.site-header__bottom');
+var elHeaderBurger = document.querySelector('.site-header__burger');
+
+if (elHeaderBurger) {
+  elHeaderBurger.addEventListener('click', function(){
+    elHeaderBottom.classList.toggle('site-header__nav--open');
+  });
+}

@@ -19,8 +19,8 @@
           <li class="header-top__item"><a href="tel:(098)266-43-89" class="header-top__tel header-top__font">(098) 266 - 43 - 89</a></li>
         </ul>
         <div class="data-wrapper">
-          <data value class="header-top__data data-firs header-top__font">Сб - Вс 8:00 - 14:00</data>
-          <data value class="header-top__data header-top__font">Пн - Пт 8:00 - 18:00</data>
+          <data value class="header-top__data data-first header-top__font"><span>Пн - Пт</span> 8:00 - 18:00</data>
+          <data value class="header-top__data header-top__font"><span>Сб - Вс</span> 8:00 - 14:00</data>
         </div>
       </div>
     </div>
@@ -30,6 +30,7 @@
         <div class="div">
           <a class="site-header__logo-link" href="index.html"><img class="site-header__logo" src="img/icon/logo.svg" alt="site-logo"></a>
         </div>
+        <button class="site-header__burger"></button>
         <nav class="site-header__nav">
           <ul class="site-header__list">
           <li class="site-header__item site-header__item--active"><a class="site-header__link site-link" href="index.html">Главная</a></li>
@@ -55,7 +56,9 @@
         <div class="hero__desc">
           <p class="hero__text">Вам и Вашему любимцу множество услуг по диагностике, профилактике заболеваний по лечению и уходу за Вашими животными. Профессионалы работающие в нашей клинике сделают все для того, чтобы быстро, эффективно и максимально безболезненно выполнить любие процедуры, которые необходимы Вашему домашнему любимцу.</p>
         </div>
-        <a href="#our-services" class="hero__link button">Наши услуги</a>
+        <div class="hero__link-wrap">
+          <a href="#our-services" class="hero__link button">Наши услуги</a>
+        </div>
         </div>
       </div>
     </section>
@@ -71,97 +74,103 @@
     </section>
 
     <section class="our-services">
-      <div class="our-services__container container" id="our-services">
-        <h2 class="our-services__heading">Наши услуги</h2>
-        <div class="our-services__menu">
-          <a href="#" class="our-service__button-left"></a>
-          <ol class="our-services__list">
-            <li class="our-services__item our-service our-service--active">
-              <a href="#" class="our-service__link">
-                <p class="our-service__desc">Первичный осмотр</p>
-              </a>
-            </li>
+      <div class="container" id="our-services">
+        <div class="our-services__container">
+          <h2 class="our-services__heading">Наши услуги</h2>
+          <div class="our-services__menu">
+            <div class="our-services__cards">
+              <button class="our-service__button our-service__button--prev"></button>
+              <button class="our-service__button our-service__button--next"></button>
+              <ol class="our-services__list">
+                <li class="our-services__item our-service our-service--active">
+                  <a href="#" class="our-service__link">
+                    <p class="our-service__desc">Первичный осмотр</p>
+                  </a>
+                </li>
 
-            <li class="our-services__item our-service">
-              <a href="#" class="our-service__link">
-                <p class="our-service__desc">Первичный осмотр</p>
-              </a>
-            </li>
+                <li class="our-services__item our-service">
+                  <a href="#" class="our-service__link">
+                    <p class="our-service__desc">Первичный осмотр</p>
+                  </a>
+                </li>
 
-            <li class="our-services__item our-service">
-              <a href="#" class="our-service__link">
-                <p class="our-service__desc">Хирургическое вмешательство</p>
-              </a>
-            </li>
+                <li class="our-services__item our-service">
+                  <a href="#" class="our-service__link">
+                    <p class="our-service__desc">Хирургическое вмешательство</p>
+                  </a>
+                </li>
 
-            <li class="our-services__item our-service">
-              <a href="#" class="our-service__link">
-                <p class="our-service__desc">Дерматология</p>
-              </a>
-            </li>
+                <li class="our-services__item our-service">
+                  <a href="#" class="our-service__link">
+                    <p class="our-service__desc">Дерматология</p>
+                  </a>
+                </li>
 
-            <li class="our-services__item our-service">
-              <a href="#" class="our-service__link">
-                <p class="our-service__desc">Лабораторная диагностика</p>
-              </a>
-            </li>
+                <li class="our-services__item our-service">
+                  <a href="#" class="our-service__link">
+                    <p class="our-service__desc">Лабораторная диагностика</p>
+                  </a>
+                </li>
 
-            <li class="our-services__item our-service">
-              <a href="#" class="our-service__link">
-                <p class="our-service__desc">Офтальмология</p>
-              </a>
-            </li>
+                <li class="our-services__item our-service">
+                  <a href="#" class="our-service__link">
+                    <p class="our-service__desc">Офтальмология</p>
+                  </a>
+                </li>
 
-            <li class="our-services__item our-service">
-              <a href="#" class="our-service__link">
-                <p class="our-service__desc">УЗИ
-                  диагностика</p>
-              </a>
-            </li>
-            <li class="our-services__item our-service">
-              <a href="#" class="our-service__link">
-                <p class="our-service__desc">Чипирование</p>
-              </a>
-            </li>
-            <li class="our-services__item our-service">
-              <a href="#" class="our-service__link">
-                <p class="our-service__desc">Международные паспорта</p>
-              </a>
-            </li>
-            <li class="our-services__item our-service">
-              <a href="#" class="our-service__link">
-                <p class="our-service__desc">Вакцинация</p>
-              </a>
-            </li>
-            <li class="our-services__item our-service">
-              <a href="#" class="our-service__link">
-                <p class="our-service__desc">Стоматология</p>
-              </a>
-            </li>
+                <li class="our-services__item our-service">
+                  <a href="#" class="our-service__link">
+                    <p class="our-service__desc">УЗИ
+                      диагностика</p>
+                  </a>
+                </li>
+                <li class="our-services__item our-service">
+                  <a href="#" class="our-service__link">
+                    <p class="our-service__desc">Чипирование</p>
+                  </a>
+                </li>
+                <li class="our-services__item our-service">
+                  <a href="#" class="our-service__link">
+                    <p class="our-service__desc">Международные паспорта</p>
+                  </a>
+                </li>
+                <li class="our-services__item our-service">
+                  <a href="#" class="our-service__link">
+                    <p class="our-service__desc">Вакцинация</p>
+                  </a>
+                </li>
+                <li class="our-services__item our-service">
+                  <a href="#" class="our-service__link">
+                    <p class="our-service__desc">Стоматология</p>
+                  </a>
+                </li>
 
-            <li class="our-services__item our-service">
-              <a href="#" class="our-service__link">
-                <p class="our-service__desc">Вызов на дом</p>
-              </a>
-            </li>
-            
-          </ol>
-
-          <div class="our-services__content">
-            <div class="services-content__img">
-              <img src="/img/cat.png" alt=" " class="services-content__image" width="524" height="329" srcset="/img/cat.png 1x, /img/cat@2x.png 2x">
+                <li class="our-services__item our-service">
+                  <a href="#" class="our-service__link">
+                    <p class="our-service__desc">Вызов на дом</p>
+                  </a>
+                </li>
+                
+              </ol>
             </div>
-            <div class="services-content__service">
-              <h2 class="services-content__heading">Первичный осмотр</h2>
-              <p class="services-content__text">По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
-              <p class="services-content__text services-content__last-txt">По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
-              <div class="services-content__btns">
-                <a href="#" class="button services-content__link button-light price-btn">Узнать цену</a><a href="#" class="button services-content__link document-btn">Записаться на приём</a>
+
+            <div class="our-services__content">
+              <div class="services-content__img">
+                <img src="/img/cat.png" alt=" " class="services-content__image" width="524" height="329" srcset="/img/cat.png 1x, /img/cat@2x.png 2x">
+              </div>
+              <div class="services-content__service">
+                <h2 class="services-content__heading">Первичный осмотр</h2>
+                <p class="services-content__text">По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
+                <p class="services-content__text services-content__last-txt">По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.</p>
+                <div class="services-content__btns">
+                  <a href="#" class="button services-content__link button-light price-btn">Узнать цену</a><a href="#" class="button services-content__link document-btn">Записаться на приём</a>
+                </div>
               </div>
             </div>
+            
           </div>
-          <a href="#" class="our-service__button"></a>
         </div>
+        
       </div>
     </section>
 
@@ -186,7 +195,7 @@
         <ul class="useful-articles__list">
           <li class="useful-articles__item article-card article-card--active">
             <img class="article-card__img article-card__img-big" src="/img/murka.png" alt=" " srcset="/img/murka.png 1x, /img/murka@2x.png 2x" width="305" height="180">
-            <img class="article-card__img article-card__img-mini" src="/img/murka-default.png" alt=" " srcset="/img/murka-default.png 1x, /img/murka-default@2x.png 2x" width="305" height="180">
+            <!-- <img class="article-card__img article-card__img-mini" src="/img/murka-default.png" alt=" " srcset="/img/murka-default.png 1x, /img/murka-default@2x.png 2x" width="305" height="180"> -->
             <div class="article-card__content">
               <div class="article-card__tags-date">
                 <ul class="article-card__tags">
@@ -216,7 +225,7 @@
 
           <li class="useful-articles__item article-card">
             <img class="article-card__img article-card__img-big" src="/img/two-dogs-big.png" alt=" " srcset="/img/two-dogs-big.png 1x, /img/two-dogs-big@2x.png 2x" width="305" height="180">
-            <img class="article-card__img article-card__img-mini" src="/img/two-dogs-mini.png" alt=" " srcset="/img/two-dogs-mini.png 1x, /img/two-dogs-mini@2x.png 2x" width="305" height="180">
+            <!-- <img class="article-card__img article-card__img-mini" src="/img/two-dogs-mini.png" alt=" " srcset="/img/two-dogs-mini.png 1x, /img/two-dogs-mini@2x.png 2x" width="305" height="180"> -->
             <div class="article-card__content">
               <div class="article-card__tags-date">
                 <ul class="article-card__tags">
@@ -246,7 +255,7 @@
 
           <li class="useful-articles__item article-card">
             <img class="article-card__img article-card__img-big" src="/img/labrador-big.png" alt=" " srcset="/img/labrador-big.png 1x, /img/labrador-big@2x.png 2x" width="305" height="180">
-            <img class="article-card__img article-card__img-mini" src="/img/labrador-mini.png" alt=" " srcset="/img/labrador-mini.png 1x, /img/labrador-mini@2x.png 2x" width="305" height="180">
+            <!-- <img class="article-card__img article-card__img-mini" src="/img/labrador-mini.png" alt=" " srcset="/img/labrador-mini.png 1x, /img/labrador-mini@2x.png 2x" width="305" height="180"> -->
             <div class="article-card__content">
               <div class="article-card__tags-date">
                 <ul class="article-card__tags">
@@ -322,21 +331,19 @@
           <li class="site-footer__item"><a href="#" class="site-footer__link site-link">Контакты</a></li>
         </ul>
         <div class="site-footer__dates">
-          <data value class="site-footer__data data-firs header-top__font">Сб - Вс 8:00 - 14:00</data>
-            <data value class="site-footer__data header-top__font">Пн - Пт 8:00 - 18:00</data>
+          <data value class="site-footer__data header-top__font data-first"> <span>Пн - Пт </span> 8:00 - 18:00</data>
+          <data value class="site-footer__data header-top__font"> <span>Сб - Вс </span> 8:00 - 14:00</data>
         </div>
         <div class="site-footer__address">
           <address class="site-footer__address header-top__font">г. Мариуполь, проспект Победы, 48а</address>
         </div>
-        <div class="site-footer__list-copyright">
           <ul class="site-footer__list">
             <li class="site-footer__tel footer-tel"><a href="tel:(067)634-75-74" class="header-top__tel header-top__font">(067) 634 -75 - 74</a></li>
             <li class="site-footer__tel"><a href="tel:(0637)57-01-31" class="header-top__tel header-top__font">(0637) 57 - 01 - 31</a></li>
             <li class="site-footer__tel"><a href="tel:(098)266-43-89" class="header-top__tel header-top__font">(098) 266 - 43 - 89</a></li>
           </ul>
-          <p class="copyright">© 2020 example. All Rights Reserved.</p>
-        </div>
       </div>
+      <p class="copyright">© 2020 example. All Rights Reserved.</p>
     </div>
     
     
